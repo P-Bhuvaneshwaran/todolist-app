@@ -19,16 +19,16 @@ const ToDoList=()=>{
     };
     return(
         <div className="container">
-            <h1>ToDo List: </h1>
+            <h2>ToDo List: </h2>
             <div className="box">
-                <input onChange={getList} value={list}  placeholder="" style={{padding:'5px'}} />
-                <button onClick={addFunc} style={{margin:'0px 10px', backgroundColor:'green', border:'none', color:'white', padding:'5px 8px', borderRadius:'5px'}}>Add</button>
+                <input onChange={getList} value={list}  placeholder="" style={{}} />
+                <button onClick={addFunc} style={{}}>Add</button>
             </div>
             <ul style={{}}>
                 {item.map((element, index)=>(
-                    <li key={index} style={{padding:"10px 0px"}}>
-                        {element}
-                        <button onClick={()=>delFunc(index)} style={{margin:'3px 20px', backgroundColor:'red', border:'none', color:'white', padding:'5px 8px', borderRadius:'5px'}}>Delete</button>
+                    <li key={index}>
+                        <span>{element}</span>
+                        <button onClick={()=>delFunc(index)} style={{}}>Delete</button>
                     </li>
                 ))}
             </ul>
